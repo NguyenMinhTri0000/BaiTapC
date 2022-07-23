@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 //Định nghĩa kiểu vector dựa vào struct
 struct List

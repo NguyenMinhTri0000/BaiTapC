@@ -1,9 +1,12 @@
 #include <stdio.h>
+# include <math.h>
 
 
-
-int Atof(char chuoi[])
+float Atof(char chuoi[])
 {
+    // char chuoi[100] = arr;
+
+
     int i = 0;
     int val = 0;
     int point;
@@ -24,21 +27,24 @@ int Atof(char chuoi[])
 
     }
         int imax = i;
-        printf("i cuoi cung %d\n", imax);  
-        //Ý tưởng làm như bên file excel nhưng không được
+        printf("i max %d\n", imax);  
+        // Ý tưởng làm như bên file excel nhưng không được
+        printf("val %d\n", val);
+        int temp = -(imax - point -1);
+        printf("-(imax - point -1) %d\n", temp);
 
-        // printf("val %d\n", val);
-        // int temp = -(imax - point -1);
-        // printf("-(imax - point -1) %d\n", temp);
-        // double temp2 = 10^temp; 
-        // printf("10^-(imax - point -1) %d\n", temp2);        
-        double valdouble = val*10^(-(imax - point -1));
+        // float temp2 = 10^temp; 
+        // printf("10^-(imax - point -1) %f\n", temp2);               
+        float temp3 =pow(10,temp);
+ 
+        printf("dung pow %f\n", temp3);      
+        float valdouble = val*temp3;
     return valdouble;
     // return val;
 }
 int main(int argc, char const *argv[])
 {
-    char arr[] = "123.4";
-    printf("Ket qua ham atof %d\n", Atof(arr));
+    char arr[] = "12.34";
+    printf("Ket qua ham atof %f\n", Atof(arr));
     return 0;
 }
