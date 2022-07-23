@@ -2,7 +2,7 @@
 #include <string.h>
 
 
-int Atoi(char chuoi[])
+int strtod(char chuoi[])
 {
     int i = 0;
     int val = 0;
