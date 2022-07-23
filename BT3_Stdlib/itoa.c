@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void Convert(int i, int temp, char *buffer)
 {
 		if (i % 2 == 0)

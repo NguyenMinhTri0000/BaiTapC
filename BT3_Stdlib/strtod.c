@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+
 
 
 int strtod(char chuoi[])
@@ -22,6 +22,6 @@ int main(int argc, char const *argv[])
 { 
     char arr[] = "edfgsd 1234";
     // Atoi(arr);
-    printf("Ket qua ham itoa %d\n", Atoi(arr));
+    printf("Ket qua ham strtod %d\n", Atoi(arr));
     return 0;
 }
